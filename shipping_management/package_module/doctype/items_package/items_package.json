@@ -1,0 +1,190 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PAC-.#####",
+ "creation": "2021-10-15 20:10:45.128339",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "items_section",
+  "items",
+  "other_information_section",
+  "shipping_code",
+  "owner",
+  "cost",
+  "paid",
+  "outstanding",
+  "source",
+  "destination",
+  "has_approved",
+  "column_break_8",
+  "departure_date",
+  "owner_full_name",
+  "arrival_date",
+  "shipping_mode",
+  "number_of_items_types",
+  "total_items",
+  "status",
+  "parent_container"
+ ],
+ "fields": [
+  {
+   "fieldname": "shipping_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Shipping Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Link",
+   "label": "Owner",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Item"
+  },
+  {
+   "fieldname": "cost",
+   "fieldtype": "Int",
+   "label": "Cost",
+   "reqd": 1
+  },
+  {
+   "fieldname": "paid",
+   "fieldtype": "Int",
+   "label": "Paid",
+   "reqd": 1
+  },
+  {
+   "fieldname": "outstanding",
+   "fieldtype": "Int",
+   "label": "Outstanding",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "has_approved",
+   "fieldtype": "Check",
+   "label": "Has Approved",
+   "read_only": 1
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Source",
+   "options": "China\nTanzania\nKenya\nBurundi\nNigeria",
+   "reqd": 1
+  },
+  {
+   "fieldname": "destination",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Destination",
+   "options": "China\nTanzania\nKenya\nBurundi\nNigeria",
+   "reqd": 1
+  },
+  {
+   "fieldname": "departure_date",
+   "fieldtype": "Date",
+   "label": "Departure Date"
+  },
+  {
+   "fieldname": "arrival_date",
+   "fieldtype": "Date",
+   "label": "Arrival Date"
+  },
+  {
+   "fieldname": "shipping_mode",
+   "fieldtype": "Select",
+   "label": "Shipping Mode",
+   "options": "Air\nWater"
+  },
+  {
+   "default": "Store (Source)",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Store (Source)\nStore (Destination)\nPacked\nAirport (Source)\nAirport (Destination)\nHarbour (Source)\nHarbour (Destination)\nDelivered\nOn The Way"
+  },
+  {
+   "fieldname": "parent_container",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Parent Container",
+   "options": "Package Container"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "items_section",
+   "fieldtype": "Section Break",
+   "label": "Items"
+  },
+  {
+   "fetch_from": "owner.full_name",
+   "fieldname": "owner_full_name",
+   "fieldtype": "Data",
+   "label": "Owner Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "number_of_items_types",
+   "fieldtype": "Int",
+   "label": "Number of Items Types",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_items",
+   "fieldtype": "Int",
+   "label": "Total Items",
+   "read_only": 1
+  },
+  {
+   "fieldname": "other_information_section",
+   "fieldtype": "Section Break",
+   "label": "Other Information"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-10-18 22:09:57.401799",
+ "modified_by": "Administrator",
+ "module": "Package Module",
+ "name": "Items Package",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "shipping_code",
+ "track_changes": 1
+}

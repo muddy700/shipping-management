@@ -1,0 +1,147 @@
+{
+ "cards_label": "how",
+ "category": "Modules",
+ "charts": [],
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"General Shortcuts\",\"level\":4,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Manage Customers\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Manage Packages\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Manage Containers\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Source Packages\",\"level\":4,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Unpacked\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Packed\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Airport Packages\",\"level\":4,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Incomming P\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Outgoing P\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Harbour Packages\",\"level\":4,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Incomming\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Outgoing\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Destination Packages\",\"level\":4,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Received\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Approved\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Delivered\",\"col\":4}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"Other Packages\",\"level\":4,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"On The Way\",\"col\":4}}]",
+ "creation": "2021-10-15 22:49:12.657382",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "icon": "right-arrow",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 0,
+ "label": "Shipping",
+ "links": [],
+ "modified": "2021-10-18 22:49:44.163858",
+ "modified_by": "Administrator",
+ "module": "Package Module",
+ "name": "Shipping",
+ "owner": "Administrator",
+ "parent_page": "",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "public": 1,
+ "roles": [],
+ "sequence_id": 9,
+ "shortcuts": [
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "format": "{} On The Way",
+   "label": "Manage Packages",
+   "link_to": "Items Package",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Manage Customers",
+   "link_to": "Customer",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{} Packages",
+   "label": "Incomming P",
+   "link_to": "Items Package",
+   "stats_filter": "{\"status\":[\"=\",\"Airport (Destination)\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "format": "{} Packages",
+   "label": "Unpacked",
+   "link_to": "Items Package",
+   "stats_filter": "{\"status\":[\"=\",\"Store (Source)\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "format": "{} Packages",
+   "label": "On The Way",
+   "link_to": "Items Package",
+   "stats_filter": "{\"status\":[\"=\",\"On The Way\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "format": "{} Packages",
+   "label": "Outgoing",
+   "link_to": "Items Package",
+   "stats_filter": "{\"status\":[\"=\",\"Harbour (Source)\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{} Packages",
+   "label": "Received",
+   "link_to": "Items Package",
+   "stats_filter": "{\"status\":[\"=\",\"Store (Destination)\"],\"has_approved\":[\"=\",0]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{} Packages",
+   "label": "Approved",
+   "link_to": "Items Package",
+   "stats_filter": "{\"has_approved\":[\"=\",1],\"status\":[\"=\",\"Store (Destination)\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{} Packages",
+   "label": "Delivered",
+   "link_to": "Items Package",
+   "stats_filter": "{\"status\":[\"=\",\"Delivered\"],\"has_approved\":[\"=\",1]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "format": "{} Packages",
+   "label": "Packed",
+   "link_to": "Items Package",
+   "stats_filter": "{\"status\":[\"=\",\"Packed\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "format": "{} Packages",
+   "label": "Outgoing P",
+   "link_to": "Items Package",
+   "stats_filter": "{\"status\":[\"=\",\"Airport (Source)\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{} Free",
+   "label": "Manage Containers",
+   "link_to": "Package Container",
+   "stats_filter": "{\"status\":[\"=\",\"Free\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{} Packages",
+   "label": "Incomming",
+   "link_to": "Items Package",
+   "stats_filter": "{\"status\":[\"=\",\"Harbour (Destination)\"]}",
+   "type": "DocType"
+  }
+ ],
+ "title": "Shipping"
+}

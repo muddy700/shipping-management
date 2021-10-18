@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CONT-.#####",
+ "creation": "2021-10-15 21:00:31.684462",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "location",
+  "status",
+  "number_of_packages",
+  "column_break_4",
+  "code_number",
+  "source",
+  "destination"
+ ],
+ "fields": [
+  {
+   "fieldname": "code_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Code Number",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.status != 'Free';",
+   "fieldname": "number_of_packages",
+   "fieldtype": "Int",
+   "label": "Number of Packages"
+  },
+  {
+   "default": "Null",
+   "depends_on": "eval:doc.status != 'Free';",
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Source",
+   "options": "China\nZambia\nTanzania\nKenya\nBurundi\nNigeria\nNull"
+  },
+  {
+   "default": "Null",
+   "depends_on": "eval:doc.status != 'Free';",
+   "fieldname": "destination",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Destination",
+   "options": "China\nTanzania\nCongo\nKenya\nBurundi\nNigeria\nNull"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Location",
+   "options": "China\nEthiopia\nTanzania\nKenya\nBurundi\nNigeria"
+  },
+  {
+   "default": "Free",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Free\nStore (Destination)\nPacked\nAirport (Source)\nAirport (Destination)\nHarbour (Source)\nHarbour (Destination)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-10-18 16:38:03.919621",
+ "modified_by": "Administrator",
+ "module": "Package Module",
+ "name": "Package Container",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "code_number",
+ "track_changes": 1
+}

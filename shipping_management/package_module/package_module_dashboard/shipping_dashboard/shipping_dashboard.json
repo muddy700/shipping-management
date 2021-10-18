@@ -1,0 +1,43 @@
+{
+ "cards": [
+  {
+   "card": "Customers Served"
+  },
+  {
+   "card": "Packages Served"
+  },
+  {
+   "card": "Conts"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Packages Status",
+   "width": "Full"
+  },
+  {
+   "chart": "Customers Chart",
+   "width": "Half"
+  },
+  {
+   "chart": "Packages Chart",
+   "width": "Half"
+  },
+  {
+   "chart": "Containers Status",
+   "width": "Full"
+  }
+ ],
+ "creation": "2021-10-17 13:29:25.660378",
+ "dashboard_name": "Shipping Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2021-10-18 00:20:11.321725",
+ "modified_by": "Administrator",
+ "module": "Package Module",
+ "name": "Shipping Dashboard",
+ "owner": "Administrator"
+}

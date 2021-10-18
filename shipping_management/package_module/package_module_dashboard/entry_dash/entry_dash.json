@@ -1,0 +1,21 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Packages Chart-1",
+   "width": "Half"
+  }
+ ],
+ "creation": "2021-10-17 11:09:18.114342",
+ "dashboard_name": "Entry Dash",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2021-10-17 11:09:18.114342",
+ "modified_by": "Administrator",
+ "module": "Package Module",
+ "name": "Entry Dash",
+ "owner": "Administrator"
+}
