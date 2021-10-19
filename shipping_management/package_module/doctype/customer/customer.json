@@ -66,7 +66,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Country",
-   "options": "China\nTanzania\nKenya\nBurundi\nNigeria"
+   "options": "Kenya\nUganda\nTanzania\nCongo\nZambia\nNigeria\nSouth Africe\nEthiopia\nChina\nDubai\nJapan\nMalawi\nTurkey\nGhana"
   },
   {
    "depends_on": "eval:doc.is_company == 1;",
@@ -87,7 +87,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-10-18 10:21:59.637118",
+ "modified": "2021-10-19 13:21:59.690594",
  "modified_by": "Administrator",
  "module": "Package Module",
  "name": "Customer",

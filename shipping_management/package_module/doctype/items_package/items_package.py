@@ -12,6 +12,8 @@ class ItemsPackage(Document):
 		self.total_items = findTotalItems(self.items)
 		self.has_approved = validatePayment(self.outstanding)
 		validateRoute(self.source, self.destination)
+		if self.parent_container:
+			checkContainerAvailability(self)
 
 
 def findTotalItems(items):
@@ -31,3 +33,8 @@ def validateRoute(source, destination):
 		frappe.throw('No Such Route:- Source and Destination must have different values.');
 	else: 
 		pass
+
+def checkContainerAvailability(self):
+	package_container = frappe.get_doc("Package Container", self.parent_container)
+	if package_container.location != self.source:
+		frappe.throw('Selected Container Is Not In Your Stock, Please Try Another One.')

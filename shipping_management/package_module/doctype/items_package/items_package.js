@@ -6,7 +6,7 @@ frappe.ui.form.on("Items Package", {
     frm.add_custom_button("Add New Package", () => {
       frappe.new_doc("Items Package", {
         owner: frm.doc.owner,
-        source: frm.doc.source
+        source: frm.doc.source,
         // owner_full_name: frm.doc.owner
       });
     });
@@ -17,3 +17,14 @@ frappe.ui.form.on("Items Package", {
     });
   },
 });
+
+cur_frm.fields_dict["parent_container"].get_query = function (doc, cdt, cdn) {
+  var current_package = locals[cdt][cdn];
+  return {
+    filters: {
+      status: "Free",
+      shipping_mode: current_package.shipping_mode,
+      location: current_package.source,
+    },
+  };
+};

@@ -81,7 +81,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Source",
-   "options": "China\nTanzania\nKenya\nBurundi\nNigeria",
+   "options": "Kenya\nUganda\nTanzania\nCongo\nZambia\nNigeria\nSouth Africe\nEthiopia\nChina\nDubai\nJapan\nMalawi\nTurkey\nGhana",
    "reqd": 1
   },
   {
@@ -90,7 +90,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Destination",
-   "options": "China\nTanzania\nKenya\nBurundi\nNigeria",
+   "options": "Kenya\nUganda\nTanzania\nCongo\nZambia\nNigeria\nSouth Africe\nEthiopia\nChina\nDubai\nJapan\nMalawi\nTurkey\nGhana",
    "reqd": 1
   },
   {
@@ -106,6 +106,8 @@
   {
    "fieldname": "shipping_mode",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Shipping Mode",
    "options": "Air\nWater"
   },
@@ -163,7 +165,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-10-18 22:09:57.401799",
+ "modified": "2021-10-19 12:34:51.863131",
  "modified_by": "Administrator",
  "module": "Package Module",
  "name": "Items Package",
